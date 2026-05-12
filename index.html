@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Boost Athletics — High-performance supplements rooted in clinical integrity. Formulated in Texas, USA by medical professionals." />
+  <meta property="og:title"       content="Boost Athletics" />
+  <meta property="og:description" content="High-performance supplements rooted in clinical integrity." />
+  <meta property="og:image"       content="Assets/ba 1.jpg" />
+  <title>Boost Athletics</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="Assets/BA Logo.png" type="image/png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       ANNOUNCEMENT BAR
+  ====================================================== -->
+  <div class="announce-bar">
+    Bundle Up &amp; Save More!&nbsp;
+    <a data-scroll="products" href="#products">SHOP NOW.</a>
+  </div>
+
+  <!-- ======================================================
+       NAVIGATION
+  ====================================================== -->
+  <header class="site-header">
+    <nav class="navbar container">
+
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" data-scroll="hero" aria-label="Boost Athletics Home">
+        <img src="Assets/BA Logo.png" alt="Boost Athletics" />
+      </a>
+
+      <!-- Desktop links -->
+      <div class="nav-links" id="desktopNav">
+
+        <!-- SHOP -->
+        <a class="nav-link" href="#products" data-scroll="products">SHOP</a>
+
+        <!-- GOALS -->
+        <a class="nav-link" href="#goals" data-scroll="goals">GOALS</a>
+
+        <!-- PROTEIN CALCULATOR -->
+        <a class="nav-link" href="#protein-calculator" data-scroll="protein-calculator">PROTEIN CALCULATOR</a>
+
+        <!-- PARTNERSHIPS -->
+        <a class="nav-link" href="#partnerships" data-scroll="partnerships">PARTNERSHIPS</a>
+
+      </div><!-- /nav-links -->
+
+      <!-- Right icons -->
+      <div class="nav-actions">
+        <!-- Account → Facebook -->
+        <a href="http://facebook.com/boostathleticstx"
+           target="_blank" rel="noopener noreferrer"
+           class="nav-icon-btn" aria-label="Visit our Facebook page">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8v-7h-2v-3h2v-2c0-2.07 1.26-3.2 3.11-3.2.88 0 1.8.07 2.7.2v3.1h-1.85c-1 0-1.15.47-1.15 1.16V12h3l-.52 3H14.8V22H20a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+          </svg>
+        </a>
+        <!-- Cart → Products section -->
+        <button class="nav-icon-btn" id="cartBtn" aria-label="Shop supplements">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1"/>
+            <circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </nav>
+  </header>
+
+  <!-- Mobile navigation drawer -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a class="mobile-nav-link" href="#products" data-scroll="products">Shop</a>
+    <a class="mobile-nav-link" href="#goals" data-scroll="goals">Goals</a>
+    <a class="mobile-nav-link" href="#protein-calculator" data-scroll="protein-calculator">Protein Calculator</a>
+    <a class="mobile-nav-link" href="#partnerships" data-scroll="partnerships">Partnerships</a>
+  </nav>
+
+
+  <!-- ======================================================
+       HERO SECTION
+  ====================================================== -->
+  <section id="hero" class="hero" aria-label="Hero">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto"
+           aria-hidden="true">
+      <source src="Assets/Vid 1.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content container">
+      <p class="hero-tagline">Boost Athletics&reg;</p>
+      <h1 class="hero-title">
+        Don't Break Your<br />
+        <span>Momentum.</span>
+      </h1>
+      <p class="hero-sub">
+        Keep your health on track and restock your daily supplements today.
+        Formulated by medical professionals, built for real results.
+      </p>
+      <a href="#partnerships" data-scroll="partnerships" class="btn btn-red">
+        Experience the BOOST &rsaquo;
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PAGE 1 — SUPPLEMENTS
+  ====================================================== -->
+  <section id="products" class="section-products">
+    <div class="container">
+
+      <div data-reveal>
+        <span class="eyebrow">Our Products</span>
+        <h2 class="section-heading">SUPPLEMENTS</h2>
+      </div>
+
+      <div class="products-wrapper" data-reveal data-reveal-delay="1">
+        <div class="products-track" role="list">
+
+          <!-- ── Product 1: BA Premium Whey ── -->
+          <div class="product-card" role="listitem"
+               data-product
+               data-img="Assets/Menu 1.png"
+               data-imgs="Assets/Menu 1.png|Assets/Menu 1.1.png"
+               data-name="BA PREMIUM WHEY"
+               data-sub="Premium Whey Protein · Chocolate Truffle · 30 Servings"
+               data-desc="BA Premium Whey is an Isolate, Hydrolyzed and Concentrate protein providing you 24 grams of protein, 130 mg of calcium, 150 mg of potassium and only 1 g of sugar per serving. Each tub contains 30 servings."
+               data-sale="$34.99">
+            <div class="product-img-wrap">
+              <img src="Assets/Menu 1.png"   alt="BA Premium Whey — Chocolate Truffle" class="active" loading="lazy" />
+              <img src="Assets/Menu 1.1.png" alt="BA Premium Whey — alternate view"    loading="lazy" />
+              <button class="img-nav prev" aria-label="Previous image">&#8249;</button>
+              <button class="img-nav next" aria-label="Next image">&#8250;</button>
+              <div class="img-dots" aria-hidden="true">
+                <span class="img-dot active"></span>
+                <span class="img-dot"></span>
+              </div>
+            </div>
+            <div class="product-info">
+              <p class="product-tag">Premium Whey · 30 Servings</p>
+              <h3 class="product-name">BA PREMIUM WHEY</h3>
+              <p class="product-sub">Isolate, Hydrolyzed &amp; Concentrate protein · 24g protein per serving</p>
+              <div class="product-pricing">
+                <span class="price-sale">$34.99</span>
+              </div>
+              <span class="product-more">Learn More</span>
+            </div>
+          </div>
+
+          <!-- ── Product 2: Boost Gains Creatine Gummies ── -->
+          <div class="product-card" role="listitem"
+               data-product
+               data-img="Assets/Menu 2.png"
+               data-name="BOOST GAINS CREATINE GUMMIES"
+               data-sub="Creatine Monohydrate · Blueberry · 60 Gummies"
+               data-desc="BA Creatine Gummies is 100% Creatine Monohydrate to help you with muscle growth and strength, brain function, recovery and healthy aging. Each bottle contains 60 gummies."
+               data-sale="$17.99">
+            <div class="product-img-wrap">
+              <img src="Assets/Menu 2.png" alt="Boost Gains Creatine Gummies" class="active" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <p class="product-tag">Creatine Monohydrate · 60 Gummies</p>
+              <h3 class="product-name">BOOST GAINS</h3>
+              <p class="product-sub">Creatine Gummies · Supports muscle strength, growth &amp; recovery</p>
+              <div class="product-pricing">
+                <span class="price-sale">$17.99</span>
+              </div>
+              <span class="product-more">Learn More</span>
+            </div>
+          </div>
+
+          <!-- ── Product 3: Boost Relax Ashwagandha Gummies ── -->
+          <div class="product-card" role="listitem"
+               data-product
+               data-img="Assets/Menu 3.png"
+               data-name="BOOST RELAX ASHWAGANDHA GUMMIES"
+               data-sub="Adaptogen Gummies · 60 Gummies"
+               data-desc="BA Ashwagandha Gummies promote relaxation and reduce anxiety. A perfect treat for your daily activities and to help you get better quality sleep. Each bottle contains 60 gummies."
+               data-sale="$16.99">
+            <div class="product-img-wrap">
+              <img src="Assets/Menu 3.png" alt="Boost Relax Ashwagandha Gummies" class="active" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <p class="product-tag">Ashwagandha · 60 Gummies</p>
+              <h3 class="product-name">BOOST RELAX</h3>
+              <p class="product-sub">Ashwagandha Gummies · Promotes relaxation &amp; reduces anxiety</p>
+              <div class="product-pricing">
+                <span class="price-sale">$16.99</span>
+              </div>
+              <span class="product-more">Learn More</span>
+            </div>
+          </div>
+
+          <!-- ── Product 4: Boost Glow Up Collagen Gummies ── -->
+          <div class="product-card" role="listitem"
+               data-product
+               data-img="Assets/Menu 4.png"
+               data-name="BOOST GLOW UP COLLAGEN GUMMIES"
+               data-sub="Hydrolyzed Collagen + Vitamin C + Glutathione · 60 Gummies"
+               data-desc="BA Collagen Gummies are made from Hydrolyzed Bovine Collagen, promoting skin glow and anti-aging effects. Collagen also supports hair, nails, bones and joints. Enhanced with Vitamin C and Glutathione for detox and immune system support. Each bottle contains 60 gummies."
+               data-sale="$18.99">
+            <div class="product-img-wrap">
+              <img src="Assets/Menu 4.png" alt="Boost Glow Up Collagen Gummies" class="active" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <p class="product-tag">Collagen · Vit C · Glutathione · 60 Gummies</p>
+              <h3 class="product-name">BOOST GLOW UP</h3>
+              <p class="product-sub">Collagen Gummies · Skin glow, anti-aging, hair &amp; nails</p>
+              <div class="product-pricing">
+                <span class="price-sale">$18.99</span>
+              </div>
+              <span class="product-more">Learn More</span>
+            </div>
+          </div>
+
+          <!-- ── Product 5: Coming Soon ── -->
+          <div class="product-card coming-soon" role="listitem">
+            <div class="product-img-wrap">
+              <img src="Assets/Coming Soon Website Part.png" alt="Coming Soon" class="active" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <p class="product-tag">New Release</p>
+              <h3 class="product-name">COMING SOON</h3>
+              <p class="product-sub">Something exciting is being cooked up. Stay tuned.</p>
+              <div class="product-pricing">
+                <span class="price-cs">Coming Soon</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /products-track -->
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PAGE 2 — GOALS
+  ====================================================== -->
+  <section id="goals" class="section-goals">
+    <div class="container">
+
+      <div class="goals-intro" data-reveal>
+        <span class="eyebrow">What We Do</span>
+        <h2 class="section-heading">WHAT ARE YOUR GOALS?</h2>
+      </div>
+
+      <div class="goals-grid">
+
+        <!-- Goal 1: Gain Muscle -->
+        <div class="goal-card" data-reveal data-reveal-delay="1">
+          <div class="goal-card-bg"
+               style="background-image:url('Assets/Model 1.png')"
+               aria-hidden="true"></div>
+          <div class="goal-card-overlay" aria-hidden="true"></div>
+          <div class="goal-card-body">
+            <span class="goal-num">01</span>
+            <h3 class="goal-title">GAIN MUSCLE</h3>
+            <p class="goal-desc">
+              Your main priority supplement would be BA Premium Whey to hit your daily protein intake.
+              A good workout without enough protein will not give you results.
+              Add creatine to boost muscle mass, strength and recovery.
+            </p>
+            <p class="goal-recs-label">Recommended Supplements:</p>
+            <p class="goal-recs">BA Whey Protein, BA Creatine Gummies</p>
+          </div>
+        </div>
+
+        <!-- Goal 2: Reduce Stress & Anxiety -->
+        <div class="goal-card" data-reveal data-reveal-delay="2">
+          <div class="goal-card-bg"
+               style="background-image:url('Assets/Model 2.png')"
+               aria-hidden="true"></div>
+          <div class="goal-card-overlay" aria-hidden="true"></div>
+          <div class="goal-card-body">
+            <span class="goal-num">02</span>
+            <h3 class="goal-title">REDUCE STRESS &amp; ANXIETY</h3>
+            <p class="goal-desc">
+              Ashwagandha is a powerful adaptogen that helps the body maintain balance during physical
+              or emotional stress by regulating the HPA axis — your body's stress command center.
+              It also supports quality sleep.
+            </p>
+            <p class="goal-recs-label">Recommended Supplements:</p>
+            <p class="goal-recs">BA Ashwagandha Gummies</p>
+          </div>
+        </div>
+
+        <!-- Goal 3: Strength or Daily Activity -->
+        <div class="goal-card" data-reveal data-reveal-delay="3">
+          <div class="goal-card-bg"
+               style="background-image:url('Assets/Model 3.png')"
+               aria-hidden="true"></div>
+          <div class="goal-card-overlay" aria-hidden="true"></div>
+          <div class="goal-card-body">
+            <span class="goal-num">03</span>
+            <h3 class="goal-title">STRENGTH OR DAILY ACTIVITY</h3>
+            <p class="goal-desc">
+              Creatine is one of the most well-researched supplements because it directly influences
+              how your cells produce energy — acting as a backup battery for both athletic performance
+              and everyday brain function.
+            </p>
+            <p class="goal-recs-label">Recommended Supplements:</p>
+            <p class="goal-recs">BA Creatine Gummies</p>
+          </div>
+        </div>
+
+        <!-- Goal 4: Improve Skin & Joints -->
+        <div class="goal-card" data-reveal data-reveal-delay="4">
+          <div class="goal-card-bg"
+               style="background-image:url('Assets/Model 4.png')"
+               aria-hidden="true"></div>
+          <div class="goal-card-overlay" aria-hidden="true"></div>
+          <div class="goal-card-body">
+            <span class="goal-num">04</span>
+            <h3 class="goal-title">IMPROVE SKIN &amp; JOINTS</h3>
+            <p class="goal-desc">
+              The ultimate synergy gummies for skin, hair, nails, bones and joints.
+              Collagen builds structure and elasticity. Glutathione brightens skin tone.
+              Vitamin C triggers collagen synthesis — without it, your body can't process collagen effectively.
+            </p>
+            <p class="goal-recs-label">Recommended Supplements:</p>
+            <p class="goal-recs">BA Collagen Gummies</p>
+          </div>
+        </div>
+
+        <!-- Goal 5–8: Coming Soon -->
+        <div class="goal-card coming-soon" data-reveal>
+          <div class="goal-card-bg" style="background-image:url('Assets/Coming Soon Website Part.png')" aria-hidden="true"></div>
+          <div class="goal-card-overlay" aria-hidden="true"></div>
+          <div class="goal-card-body">
+            <span class="goal-num">05</span>
+            <h3 class="goal-title">GAIN WEIGHT</h3>
+            <p class="goal-desc">This supplement is one of the most requested. BA is cooking. Coming soon.</p>
+            <p class="goal-recs-label">Recommended Supplements:</p>
+            <p class="goal-recs">BA Premium Mass Gainer</p>
+          </div>
+        </div>
+
+        <div class="goal-card coming-soon" data-reveal data-reveal-delay="1">
+          <div class="goal-card-bg" style="background-image:url('Assets/Coming Soon Website Part.png')" aria-hidden="true"></div>
+          <div class="goal-card-overlay" aria-hidden="true"></div>
+          <div class="goal-card-body">
+            <span class="goal-num">06</span>
+            <h3 class="goal-title">WEIGHT MANAGEMENT</h3>
+            <p class="goal-desc">This supplement is one of the most requested. BA is cooking. Coming soon.</p>
+            <p class="goal-recs-label">Recommended Supplements:</p>
+            <p class="goal-recs">BA Fat Burners</p>
+          </div>
+        </div>
+
+        <div class="goal-card coming-soon" data-reveal data-reveal-delay="2">
+          <div class="goal-card-bg" style="background-image:url('Assets/Coming Soon Website Part.png')" aria-hidden="true"></div>
+          <div class="goal-card-overlay" aria-hidden="true"></div>
+          <div class="goal-card-body">
+            <span class="goal-num">07</span>
+            <h3 class="goal-title">ENERGY OR RECOVERY?</h3>
+            <p class="goal-desc">This supplement is one of the most requested. BA is cooking. Coming soon.</p>
+            <p class="goal-recs-label">Recommended Supplements:</p>
+            <p class="goal-recs">BA Pre-Workout &amp; BCAA</p>
+          </div>
+        </div>
+
+        <div class="goal-card coming-soon" data-reveal data-reveal-delay="3">
+          <div class="goal-card-bg" style="background-image:url('Assets/Coming Soon Website Part.png')" aria-hidden="true"></div>
+          <div class="goal-card-overlay" aria-hidden="true"></div>
+          <div class="goal-card-body">
+            <span class="goal-num">08</span>
+            <h3 class="goal-title">DAILY VITAMINS</h3>
+            <p class="goal-desc">This supplement is one of the most requested. BA is cooking. Coming soon.</p>
+            <p class="goal-recs-label">Recommended Supplements:</p>
+            <p class="goal-recs">BA Vitamins</p>
+          </div>
+        </div>
+
+      </div><!-- /goals-grid -->
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PAGE 3 — PROTEIN CALCULATOR
+  ====================================================== -->
+  <section id="protein-calculator" class="section-calculator">
+    <div class="container">
+
+      <div class="calc-header" data-reveal>
+        <span class="eyebrow">Nutrition Science</span>
+        <h2 class="section-heading">BA Protein Calculator</h2>
+        <p class="calc-subtitle">
+          How much protein do you need based on your fitness goals?
+        </p>
+
+        <a href="http://facebook.com/boostathleticstx"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-dark">
+          Boost Your Daily Protein Intake
+        </a>
+      </div>
+
+      <div class="calc-content">
+
+        <div class="calc-text" data-reveal>
+          <h3>How much protein do you need to actually build muscle?</h3>
+          <ul class="calc-bullets">
+            <li class="calc-bullet">
+              <span class="calc-bullet-icon">1</span>
+              <p>
+                According to the most recent research and established meta-analyses,
+                <strong>0.8g of protein per pound of body weight</strong> is often cited as the
+                "sweet spot" or the "plateau point" for muscle growth.
+              </p>
+            </li>
+            <li class="calc-bullet">
+              <span class="calc-bullet-icon">2</span>
+              <p>
+                The Optimal Range: Most research indicates that muscle protein synthesis is maximized
+                at around <strong>0.7g to 1.0g per pound of body weight</strong>.
+                <em>Example:</em> If you weigh 100 lbs, it is recommended you take 70g to 100g
+                of protein daily.
+              </p>
+            </li>
+            <li class="calc-bullet">
+              <span class="calc-bullet-icon">3</span>
+              <p>
+                The best way to make sure your macros and daily protein are computed personally for you —
+                <strong>message us on Facebook</strong> and we will help you optimize your daily macros
+                in line with your fitness goals.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="calc-img-wrap" data-reveal data-reveal-delay="2">
+          <img src="Assets/Model 5.png"
+               alt="BA nutrition consultation — two trainers reviewing macro tracking app"
+               loading="lazy" />
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PAGE 4 — PARTNERSHIPS
+  ====================================================== -->
+  <section id="partnerships" class="section-partnerships">
+    <div class="container">
+
+      <div class="partnerships-header">
+        <div data-reveal>
+          <span class="eyebrow">About Us</span>
+          <h2 class="section-heading">HOW TO BECOME PARTNERS WITH BA?</h2>
+        </div>
+        <p class="partnerships-desc" data-reveal data-reveal-delay="1">
+          Boost Athletics was founded on a simple principle: high-performance supplementation should be
+          rooted in clinical integrity. Formulated and developed by our clinical team in Texas, USA,
+          our brand is owned and operated by medical professionals who understand the complex relationship
+          between nutrition and human physiology.
+        </p>
+      </div>
+
+      <div class="partnerships-grid">
+
+        <!-- Card 1: Sponsorship -->
+        <div class="partner-card" data-reveal>
+          <div class="partner-card-bg"
+               style="background-image:url('Assets/ba 1.jpg')"
+               aria-hidden="true"></div>
+          <div class="partner-card-overlay" aria-hidden="true"></div>
+          <div class="partner-card-body">
+            <h3 class="partner-card-title">Sponsorship</h3>
+            <p class="partner-card-desc">
+              Having an event? Let BA sponsor you.
+            </p>
+            <a href="http://facebook.com/boostathleticstx"
+               target="_blank" rel="noopener noreferrer"
+               class="partner-card-cta">
+              Send Us a DM &rsaquo;
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Coach Program -->
+        <div class="partner-card" data-reveal data-reveal-delay="1">
+          <div class="partner-card-bg"
+               style="background-image:url('Assets/ba 2.jpg')"
+               aria-hidden="true"></div>
+          <div class="partner-card-overlay" aria-hidden="true"></div>
+          <div class="partner-card-body">
+            <h3 class="partner-card-title">Coach Program</h3>
+            <p class="partner-card-desc">
+              Are you any type of coach — sports, gym, fitness, zumba or any discipline?
+              Partner with us.
+            </p>
+            <a href="http://facebook.com/boostathleticstx"
+               target="_blank" rel="noopener noreferrer"
+               class="partner-card-cta">
+              Send Us a DM &rsaquo;
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Gym Owner Program -->
+        <div class="partner-card" data-reveal data-reveal-delay="2">
+          <div class="partner-card-bg"
+               style="background-image:url('Assets/ba 3.jpg')"
+               aria-hidden="true"></div>
+          <div class="partner-card-overlay" aria-hidden="true"></div>
+          <div class="partner-card-body">
+            <h3 class="partner-card-title">Gym Owner Program</h3>
+            <p class="partner-card-desc">
+              Are you a gym owner? Let's put BA in your gym. We'll supply your facility
+              with premium supplements your members will love.
+            </p>
+            <a href="http://facebook.com/boostathleticstx"
+               target="_blank" rel="noopener noreferrer"
+               class="partner-card-cta">
+              Send Us a DM &rsaquo;
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PAGE 5 — FOOTER
+  ====================================================== -->
+  <footer class="site-footer">
+
+    <div class="footer-main">
+      <img src="Assets/BA Logo.png"
+           alt="Boost Athletics"
+           class="footer-logo"
+           loading="lazy" />
+
+      <h2 class="footer-cta-text">
+        Follow Us on Facebook<br />
+        for the Latest News,<br />
+        Events &amp; Promos.
+      </h2>
+
+      <a href="http://facebook.com/boostathleticstx"
+         target="_blank" rel="noopener noreferrer"
+         class="footer-fb-link">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+        facebook.com/boostathleticstx
+      </a>
+    </div>
+
+    <div class="footer-disclaimer">
+      <p>
+        *Disclaimer: These statements have not been evaluated by the Food and Drug Administration.
+        These products are not intended to diagnose, treat, cure or prevent any disease.
+        Always consult a healthcare professional before starting any supplement program.
+      </p>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; 2026 Boost Athletics.</p>
+      <nav class="footer-nav" aria-label="Footer links">
+        <a href="#">Terms of Use</a>
+        <a href="#">Terms of Sale</a>
+        <a href="#">Accessibility Statement</a>
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </div>
+
+  </footer>
+
+
+  <!-- ======================================================
+       PRODUCT MODAL
+  ====================================================== -->
+  <div id="productModal" class="modal-overlay" role="dialog" aria-modal="true"
+       aria-labelledby="modalTitle">
+    <div class="modal-sheet">
+      <button id="modalClose" class="modal-close" aria-label="Close product detail">&times;</button>
+      <div class="modal-carousel">
+        <button id="modalPrev" class="modal-nav modal-prev" aria-label="Previous image">&#8249;</button>
+        <img id="modalImg" src="" alt="" class="modal-img" />
+        <button id="modalNext" class="modal-nav modal-next" aria-label="Next image">&#8250;</button>
+        <div id="modalDots" class="modal-img-dots" aria-hidden="true"></div>
+      </div>
+      <p id="modalSub"   class="modal-sub"></p>
+      <h2 id="modalTitle" class="modal-title"></h2>
+      <p id="modalDesc"  class="modal-desc"></p>
+      <div class="modal-price product-pricing" style="margin-bottom:1.5rem">
+        <span id="modalPriceSale" class="price-sale"></span>
+      </div>
+      <div class="modal-cta">
+        <a id="modalCta"
+           href="http://facebook.com/boostathleticstx"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-red" style="width:100%;text-align:center;display:block;"
+           onclick="window.open('http://facebook.com/boostathleticstx','_blank')">
+          Order Now
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ======================================================
+       GOAL COMING SOON MODAL
+  ====================================================== -->
+  <div id="goalModal" class="modal-overlay" role="dialog" aria-modal="true"
+       aria-labelledby="goalModalTitle">
+    <div class="modal-sheet goal-modal-sheet">
+      <button id="goalModalClose" class="modal-close" aria-label="Close">&times;</button>
+      <div class="goal-modal-img-wrap">
+        <img id="goalModalImg" src="" alt="" class="goal-modal-img" />
+      </div>
+      <div class="goal-modal-content">
+        <span id="goalModalBadge" class="goal-modal-badge">COMING SOON</span>
+        <h2 id="goalModalTitle" class="goal-modal-title"></h2>
+        <p class="goal-modal-desc" id="goalModalDesc"></p>
+        <p class="goal-recs-label">Recommended Supplements:</p>
+        <p class="goal-modal-recs" id="goalModalRecs"></p>
+        <a id="goalModalCta"
+           href="http://facebook.com/boostathleticstx"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-red goal-modal-cta">
+          Stay Updated on Facebook
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
