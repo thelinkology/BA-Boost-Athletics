@@ -406,6 +406,8 @@ ul { list-style: none; }
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   transition: transform var(--transition), box-shadow var(--transition);
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 .product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.14); }
 
@@ -429,6 +431,13 @@ ul { list-style: none; }
   pointer-events: none;
 }
 .product-img-wrap img.active { opacity: 1; pointer-events: auto; }
+
+/* Alternate / label images — show full image, no padding, white bg */
+.product-img-wrap img.img-alt {
+  object-fit: contain;
+  padding: 0;
+  background: #fff;
+}
 
 /* Swipe arrows (only show if > 1 image) */
 .img-nav {
@@ -475,8 +484,14 @@ ul { list-style: none; }
   background: #e8e8e8;
 }
 
-/* Card body */
-.product-info { padding: 1rem 1.1rem 1.2rem; }
+/* Card body — grid keeps price row pinned at same height across all cards */
+.product-info {
+  padding: 1rem 1.1rem 1.2rem;
+  flex: 1;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  /* rows: tag / name / sub (fills space) / pricing / learn-more */
+}
 
 .product-tag {
   font-size: 0.7rem;
@@ -532,7 +547,7 @@ ul { list-style: none; }
 .product-more {
   display: block;
   text-align: center;
-  margin-top: 0.85rem;
+  align-self: end;
   padding: 0.55rem;
   font-size: 0.75rem;
   font-weight: 700;
@@ -603,8 +618,8 @@ ul { list-style: none; }
 .modal-close:hover { background: rgba(0,0,0,0.85); color: #fff; }
 
 .modal-img {
-  width: 60%;
-  max-width: 240px;
+  width: 85%;
+  max-width: 420px;
   margin: 0 auto 1.5rem;
   object-fit: contain;
 }
